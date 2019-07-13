@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D2DD284-F707-44B5-A437-01731F8B5261}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Apresentacao</RootNamespace>
+    <AssemblyName>Apresentacao</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.EntityFrameworkCore, Version=2.2.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.2.2.4\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Abstractions, Version=2.2.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.Abstractions.2.2.4\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Relational, Version=2.2.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.Relational.2.2.4\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Relational.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.SqlServer, Version=2.2.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.SqlServer.2.2.4\lib\netstandard2.0\Microsoft.EntityFrameworkCore.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Memory, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Memory.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Binder.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.2.2.0\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.2.2.0\lib\net45\Remotion.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.5.0\lib\netstandard2.0\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.5.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.6.0\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.5.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Interactive.Async, Version=3.2.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Interactive.Async.3.2.0\lib\net46\System.Interactive.Async.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.1\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.1\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agenda.Designer.cs">
+      <DependentUpon>Agenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgendaExames.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgendaExames.Designer.cs">
+      <DependentUpon>AgendaExames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlteExCli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlteExCli.Designer.cs">
+      <DependentUpon>AlteExCli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltExAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltExAnimal.Designer.cs">
+      <DependentUpon>AltExAnimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AtdAvulso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AtdAvulso.Designer.cs">
+      <DependentUpon>AtdAvulso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadAnimalComCPF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadAnimalComCPF.Designer.cs">
+      <DependentUpon>CadAnimalComCPF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Caixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caixa.Designer.cs">
+      <DependentUpon>Caixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaMarcar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaMarcar.Designer.cs">
+      <DependentUpon>ConsultaMarcar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaMarcar2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaMarcar2.Designer.cs">
+      <DependentUpon>ConsultaMarcar2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultasMarcadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultasMarcadas.Designer.cs">
+      <DependentUpon>ConsultasMarcadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExameAltEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExameAltEx.Designer.cs">
+      <DependentUpon>ExameAltEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadAnimal.Designer.cs">
+      <DependentUpon>FormCadAnimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadCli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadCli.Designer.cs">
+      <DependentUpon>FormCadCli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistoricoClli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoricoClli.Designer.cs">
+      <DependentUpon>HistoricoClli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListadePets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListadePets.Designer.cs">
+      <DependentUpon>ListadePets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListAtendimentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListAtendimentos.Designer.cs">
+      <DependentUpon>ListAtendimentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarcarExame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarcarExame.Designer.cs">
+      <DependentUpon>MarcarExame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAnimal.Designer.cs">
+      <DependentUpon>MenuAnimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAtendimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAtendimento.Designer.cs">
+      <DependentUpon>MenuAtendimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuCaixa.Designer.cs">
+      <DependentUpon>MenuCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuCliente.Designer.cs">
+      <DependentUpon>MenuCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuConsulta.Designer.cs">
+      <DependentUpon>MenuConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuExame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuExame.Designer.cs">
+      <DependentUpon>MenuExame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PesqAtdCons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PesqAtdCons.Designer.cs">
+      <DependentUpon>PesqAtdCons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PesqConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PesqConsulta.Designer.cs">
+      <DependentUpon>PesqConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PesqExame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PesqExame.Designer.cs">
+      <DependentUpon>PesqExame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PesqPós.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PesqPós.Designer.cs">
+      <DependentUpon>PesqPós.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PesquisaAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PesquisaAnimal.Designer.cs">
+      <DependentUpon>PesquisaAnimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PesquisaCli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PesquisaCli.Designer.cs">
+      <DependentUpon>PesquisaCli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TelaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaInicial.Designer.cs">
+      <DependentUpon>TelaInicial.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Agenda.resx">
+      <DependentUpon>Agenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgendaExames.resx">
+      <DependentUpon>AgendaExames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlteExCli.resx">
+      <DependentUpon>AlteExCli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltExAnimal.resx">
+      <DependentUpon>AltExAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AtdAvulso.resx">
+      <DependentUpon>AtdAvulso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadAnimalComCPF.resx">
+      <DependentUpon>CadAnimalComCPF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caixa.resx">
+      <DependentUpon>Caixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaMarcar.resx">
+      <DependentUpon>ConsultaMarcar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaMarcar2.resx">
+      <DependentUpon>ConsultaMarcar2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultasMarcadas.resx">
+      <DependentUpon>ConsultasMarcadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExameAltEx.resx">
+      <DependentUpon>ExameAltEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadAnimal.resx">
+      <DependentUpon>FormCadAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadCli.resx">
+      <DependentUpon>FormCadCli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoricoClli.resx">
+      <DependentUpon>HistoricoClli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadePets.resx">
+      <DependentUpon>ListadePets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListAtendimentos.resx">
+      <DependentUpon>ListAtendimentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarcarExame.resx">
+      <DependentUpon>MarcarExame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAnimal.resx">
+      <DependentUpon>MenuAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAtendimento.resx">
+      <DependentUpon>MenuAtendimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuCaixa.resx">
+      <DependentUpon>MenuCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuCliente.resx">
+      <DependentUpon>MenuCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuConsulta.resx">
+      <DependentUpon>MenuConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuExame.resx">
+      <DependentUpon>MenuExame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PesqAtdCons.resx">
+      <DependentUpon>PesqAtdCons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PesqConsulta.resx">
+      <DependentUpon>PesqConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PesqExame.resx">
+      <DependentUpon>PesqExame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PesqPós.resx">
+      <DependentUpon>PesqPós.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PesquisaAnimal.resx">
+      <DependentUpon>PesquisaAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PesquisaCli.resx">
+      <DependentUpon>PesquisaCli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TelaInicial.resx">
+      <DependentUpon>TelaInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Modelo\Modelo.csproj">
+      <Project>{a6059567-18e2-406e-8617-f7cb3e96eb48}</Project>
+      <Name>Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Servico\Servico.csproj">
+      <Project>{a896b939-87da-4e0c-9109-caab414e6faa}</Project>
+      <Name>Servico</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

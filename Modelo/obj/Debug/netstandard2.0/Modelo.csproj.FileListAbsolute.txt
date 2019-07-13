@@ -1,0 +1,9 @@
+C:\Users\letic\OneDrive\Área de Trabalho\Final\ProjetoFINAL\Modelo\bin\Debug\netstandard2.0\Modelo.deps.json
+C:\Users\letic\OneDrive\Área de Trabalho\Final\ProjetoFINAL\Modelo\bin\Debug\netstandard2.0\Modelo.dll
+C:\Users\letic\OneDrive\Área de Trabalho\Final\ProjetoFINAL\Modelo\bin\Debug\netstandard2.0\Modelo.pdb
+C:\Users\letic\OneDrive\Área de Trabalho\Final\ProjetoFINAL\Modelo\obj\Debug\netstandard2.0\Modelo.csprojAssemblyReference.cache
+C:\Users\letic\OneDrive\Área de Trabalho\Final\ProjetoFINAL\Modelo\obj\Debug\netstandard2.0\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\letic\OneDrive\Área de Trabalho\Final\ProjetoFINAL\Modelo\obj\Debug\netstandard2.0\Modelo.AssemblyInfoInputs.cache
+C:\Users\letic\OneDrive\Área de Trabalho\Final\ProjetoFINAL\Modelo\obj\Debug\netstandard2.0\Modelo.AssemblyInfo.cs
+C:\Users\letic\OneDrive\Área de Trabalho\Final\ProjetoFINAL\Modelo\obj\Debug\netstandard2.0\Modelo.dll
+C:\Users\letic\OneDrive\Área de Trabalho\Final\ProjetoFINAL\Modelo\obj\Debug\netstandard2.0\Modelo.pdb
